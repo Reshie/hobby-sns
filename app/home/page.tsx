@@ -52,8 +52,8 @@ export function Card({
 
 export default function Page() {
   return (
-    <main className="overflow-y-scroll flex justify-center px-8 h-screen bg-slate-200">
-        <div className="w-[560px] bg-slate-300">
+    <main className="overflow-y-scroll flex grow justify-center h-screen bg-slate-200">
+        <div className="max-w-[560px] mx-8 bg-slate-300">
             <header className="h-16">Header is here! This is a new SNS for you!</header>
             {posts.map((post) => (
                 <Card name={post['name']} text={post['text']} tag={post['tag']} />

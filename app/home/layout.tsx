@@ -7,7 +7,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex justify-stretch w-full h-screen bg-slate-200">
+    <main className="flex w-full h-screen bg-slate-200">
         <SideNav />
         {children}
         <PostButton />
