@@ -8,7 +8,6 @@
 #### フロントエンド
 - Next.js + React
 - Vercel
-- Supabase
 #### バックエンド
 - fastapi
 - heroku
