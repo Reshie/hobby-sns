@@ -9,8 +9,8 @@
 - Next.js + React
 - Vercel
 #### バックエンド
-- fastapi
-- heroku
+- FastAPI
+- Heroku
 
 -----
 
