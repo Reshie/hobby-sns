@@ -3,7 +3,8 @@ import {
     HeartIcon,
     ShareIcon,
     EllipsisVerticalIcon
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/outline';
+import { posts } from '@/app/lib/placeholder-data';
 
 export function Card({
     name,
@@ -43,21 +44,9 @@ export default function Page() {
     <main className="overflow-y-scroll flex justify-center w-full h-screen bg-slate-200">
         <div className="w-[560px] bg-slate-300">
             <p>Hi! This is a new SNS for you!</p>
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
-            <Card name="User Name" text="ああああああああああああああああああああああああああああ" />
+            {posts.map((post) => (
+                <Card name={post['name']} text={post['text']} />
+            ))}
         </div>
     </main>
   );
