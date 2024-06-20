@@ -1,7 +1,9 @@
 export default function Page() {
   return (
-    <div className="w-[560px] px-8">
-      <p>Post area</p>
+    <div className="grow max-w-[560px] mx-8">
+      <div>
+        <p>Post area</p>
+      </div>
     </div>
   );
 }

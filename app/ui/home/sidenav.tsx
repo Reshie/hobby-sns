@@ -1,6 +1,6 @@
 export default function SideNav() {
   return (
-    <div className="grow bg-white max-w-60 hidden sm:block">
+    <div className="flex h-full bg-white w-60">
       <p>side navigation!</p>
     </div>
   )

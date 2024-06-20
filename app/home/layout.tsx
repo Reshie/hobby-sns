@@ -7,10 +7,12 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex w-full h-screen bg-slate-200">
+    <div className="flex h-screen overflow-hidden bg-slate-200">
+      <div className="flex-none h-screen">
         <SideNav />
-        {children}
-        <PostButton />
-    </main>
+      </div>
+      <div className="flex-grow px-6 overflow-y-auto">{children}</div>
+      <PostButton />
+    </div>
   );
 }
