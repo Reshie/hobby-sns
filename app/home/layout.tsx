@@ -7,7 +7,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-200">
+    <div className="flex h-screen overflow-hidden bg-group">
       <div className="flex-none h-screen w-full max-w-16 md:max-w-56">
         <SideNav />
       </div>
