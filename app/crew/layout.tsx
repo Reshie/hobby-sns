@@ -1,5 +1,5 @@
-import SideNav from "@/app/ui/home/sidenav";
-import PostButton from "@/app/ui/home/post-button";
+import SideNav from "@/app/ui/crew/sidenav";
+import PostButton from "@/app/ui/crew/post-button";
 
 export default function Layout({
   children,

@@ -1,5 +1,5 @@
 import { posts } from '@/app/lib/placeholder-data';
-import Card from '@/app/ui/home/card';
+import Card from '@/app/ui/crew/card';
 
 export default function Page() {
   return (
