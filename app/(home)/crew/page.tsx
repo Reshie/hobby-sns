@@ -1,19 +1,31 @@
 import { posts } from '@/app/lib/placeholder-data';
 import Card from '@/app/ui/crew/card';
 
-const sample = [{
-	name: "Username",
-	content: "Hello!",
-	likes: 123,
-	replies: 12,
-}];
+const sample = [
+  {
+    name: "Username",
+    content: "それはまあ、ざっと百二十万年ぐらい前にできたというのではなかったろうか、ジョバンニは思わずどきっとして戻ろうとしました。すると白服を着た、せいの高い車掌が、いつかまっすぐに立っていました。ジョバンニは、少しきまり悪そうにしました。すると青年は自分でとって一つずつ睡っているように見えるように思いましたが、思い直して、いっそう勢いよくそっちへ歩いて行って、おっかさんのいちばんの幸福をさがし、みんなといっしょに乗っていながら、まるであんな女の子とばかり談しているのが見えました。",
+    likes: 123,
+    replies: 12,
+  },
+  {
+    name: "Username2",
+    content: "まっ白な、あのさっきの北の十字架のようにまっすぐに行こうと言ったとたん、がらんとしたんだ。そしてこれからなんでもいつでも家じゅうまだしいんとして誰もいませんでした。ジョバンニはわれを忘れてきた。発破だよカムパネルラはにわかに赤い旗をあげて、ちらちらまたたき、脚が何べんも眼をぬぐいながら活字をだんだんひろいました。ジョバンニはにわかに窓の外で言いました。",
+    likes: 123,
+    replies: 12,
+  },
+];
 
 export default function Page() {
   return (
-    <div className="w-[520px] mx-4 my-4 bg-white">
+    <div className="w-[520px] m-4">
       <Card 
         posts={sample}
         tag="挨拶"        
+      />
+      <Card 
+        posts={sample}
+        tag="読書"        
       />
     </div>
   );

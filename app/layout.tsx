@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import "@/app/ui/globals.css";
 
-const noto_sans = Noto_Sans({ subsets: ["latin"] });
+const noto_sans_jp = Noto_Sans_JP({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hobby SNS",
+  title: "Cruise",
   description: "SNS with your hobbies.",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={noto_sans.className}>{children}</body>
+      <body className={noto_sans_jp.className}>{children}</body>
     </html>
   );
 }

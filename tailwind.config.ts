@@ -11,7 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         'main': {
-          'pale': '#F7F8FF',
+          'pale': '#FCFDFF',
+          'nav': '#F7F8FF',
+          'post': '#FCFDFF',
           DEFAULT: '#3A3D92',
         },
         'like': '#FF5771',

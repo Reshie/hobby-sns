@@ -47,8 +47,8 @@ export default function SideNav() {
       <div className="flex w-full h-10 items-center gap-2">
         <Image 
           src="/sidenav/logo.png"
-          width={40}
-          height={40}
+          width={36}
+          height={36}
           alt="Logo"
         />
         <h1 className={`text-3xl ${orelegaOne.className}`}>Cruise</h1>
