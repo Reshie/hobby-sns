@@ -1,7 +1,29 @@
 import Image from 'next/image';
 import { Orelega_One } from "next/font/google";
+import NavLinks from '@/app/ui/crew/nav-links';
 
 const orelegaOne = Orelega_One({weight: "400", subsets: ["latin"]});
+
+const upperLinks = [
+  { 
+    name: 'Crew', 
+    href: '/crew', 
+    activeIcon: '/sidenav/crew-w.png', 
+    inactiveIcon: '/sidenav/crew-b.png'
+  },
+  { 
+    name: 'Ocean', 
+    href: '/ocean', 
+    activeIcon: '/sidenav/ocean-w.png', 
+    inactiveIcon: '/sidenav/ocean-b.png'
+  },
+  { 
+    name: 'Search', 
+    href: '/search', 
+    activeIcon: '/sidenav/search-w.png', 
+    inactiveIcon: '/sidenav/search-b.png'
+  },
+];
 
 export default function SideNav() {
   return (
@@ -15,25 +37,8 @@ export default function SideNav() {
         />
         <h1 className={`text-3xl ${orelegaOne.className}`}>Cruise</h1>
       </div>
-      <div className="h-16"></div>
-      <div className="flex w-full h-12 bg-main items-center p-4 rounded-lg gap-3">
-        <Image 
-          src="/sidenav/crew-w.png"
-          width={28}
-          height={28}
-          alt="Crew"
-        />
-        <h2 className="text-white text-md font-semibold">Crew</h2>
-      </div>
-      <div className="flex w-full h-12 items-center p-4 rounded-lg gap-3">
-        <Image 
-          src="/sidenav/ocean-b.png"
-          width={28}
-          height={28}
-          alt="Ocean"
-        />
-        <h2 className="text-black text-md font-medium">Ocean</h2>
-      </div>
+      <div className="h-12"></div>
+      <NavLinks links={upperLinks} />
     </div>
   )
 }
