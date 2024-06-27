@@ -8,7 +8,7 @@ export default function Layout({
   return (
     <div className="flex h-screen overflow-hidden bg-group">
       <SideNav />
-      <div className="flex-grow px-6 overflow-y-auto">{children}</div>
+      <div className="flex px-6 overflow-y-auto">{children}</div>
     </div>
   );
 }
