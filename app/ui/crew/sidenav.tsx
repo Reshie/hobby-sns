@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Orelega_One } from "next/font/google";
 import NavLinks from '@/app/ui/crew/nav-links';
 
@@ -25,6 +26,21 @@ const upperLinks = [
   },
 ];
 
+const lowerLinks = [
+  { 
+    name: 'My Profile', 
+    href: '/profile', 
+    activeIcon: '/sidenav/profile-w.png', 
+    inactiveIcon: '/sidenav/profile-b.png'
+  },
+  { 
+    name: 'Likes', 
+    href: '/likes', 
+    activeIcon: '/sidenav/likes-w.png', 
+    inactiveIcon: '/sidenav/likes-b.png'
+  },
+];
+
 export default function SideNav() {
   return (
     <div className="flex-col w-60 h-full bg-white p-4 border-r border-border">
@@ -37,8 +53,18 @@ export default function SideNav() {
         />
         <h1 className={`text-3xl ${orelegaOne.className}`}>Cruise</h1>
       </div>
-      <div className="h-12"></div>
+      <div className="h-8"></div>
       <NavLinks links={upperLinks} />
+      <div className="h-[1px] my-8 mx-4 bg-border"></div>
+      <NavLinks links={lowerLinks} />
+      <div className="h-8"></div>
+      <Link
+        key="post"
+        href="/post"
+        className="flex h-12 justify-center items-center bg-main mx-2 p-4 rounded-full"
+      >
+        <h2 className="text-white font-semibold">Post</h2>
+      </Link>
     </div>
   )
 }

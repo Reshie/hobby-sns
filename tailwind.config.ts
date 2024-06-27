@@ -10,7 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'main': '#3A3D92',
+        'main': {
+          'pale': '#F7F8FF',
+          DEFAULT: '#3A3D92',
+        },
         'like': '#FF5771',
         'crown': '#D78B33',
         'text1': '#131313',

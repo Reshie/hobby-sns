@@ -30,6 +30,7 @@ export default function NavLinks({links} : NavLinksProps) {
             "flex w-full h-12 items-center p-4 rounded-lg gap-3", 
               {
                 "bg-main" : pathname === link.href,
+                "hover:bg-main-pale" : pathname !== link.href,
                 "mt-2" : index != 0
               }
             )}
